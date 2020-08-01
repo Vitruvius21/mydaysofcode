@@ -9,6 +9,7 @@
   font-family: NasaFont;
   src: url(../fonts/nasalization-rg.ttf);
 }
+
 html {
   scroll-behavior: smooth;
 }
