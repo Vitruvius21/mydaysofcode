@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: NasaFont;
+  src: url(../fonts/nasalization-rg.ttf);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: hsl(0, 0%, 90%);
+}
+
+body::-webkit-scrollbar {
+  background: transparent;
+  width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+  outline: 1px solid slategrey;
+  border-radius: 2rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5vw;
+  padding: 3vw;
+}
+
+@media (max-width: 1030px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 4rem;
+  background: hsl(0, 0%, 90%);
+  width: 100%;
+  height: 5rem;
+  margin-top: 3vw;
+}
+
+nav li {
+  background: hsl(0, 0%, 90%);
+  border-radius: 40px;
+  border: 1px solid hsla(0, 0%, 85%, 0.15);
+  box-shadow: 4px 4px 10px 0 #bdbdbd, -6px -6px 14px 0 #ffffff;
+}
+
+nav li:active {
+  box-shadow: inset 4px 4px 10px 0 #bdbdbd, inset -6px -6px 14px 0 #ffffff;
+}
+
+nav li a {
+  display: block;
+  padding: 1rem 2rem;
+  font-family: NasaFont;
+  text-decoration: none;
+  user-select: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+nav li a:active {
+  color: rgb(90, 185, 234);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: hsl(0, 0%, 90%);
+  padding: 1.8rem;
+  border-radius: 40px;
+  border: 1px solid hsla(0, 0%, 85%, 0.15);
+  box-shadow: 6px 6px 14px 0 #bdbdbd, -8px -8px 18px 0 #ffffff;
+}
+
+.day3:hover {
+  transform: rotate(-4deg);
+  transition: ease-out 0.5s;
+}
+
+.card:hover,
+nav li:hover {
+  background: linear-gradient(145deg, hsl(0, 0%, 85%), #eeeeee);
+  border: 1px solid hsla(0, 0%, 85%, 0.15);
+}
+
+.card-title {
+  display: flex;
+  font-family: NasaFont;
+  justify-content: space-between;
+  align-items: center;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+.card,
+mark {
+  color: hsla(0, 0%, 0%, 0.7);
+}
+
+.card a {
+  opacity: 0.55;
+}
+
+.card a:hover {
+  opacity: 0.85;
+}
+
+mark {
+  background: #f5f5f5;
+}
+
+.card ul {
+  /* list-style-position: inside; */
+  list-style-type: square;
+  margin-left: 1rem;
+}
+
+.card-image {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.04);
+  opacity: 0.8;
+}
