@@ -1,12 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="svg6" version="1.1" height="100" width="100">
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <defs>
+    <linearGradient id="L" x1="10" x2="100" y1="10" y2="100" gradientUnits="userSpaceOnUse" spreadMethod="pad">
+      <stop offset="0" stop-color="#80d5ff" />
+      <stop offset="1" stop-color="#0d80f2" />
+    </linearGradient>
+    <linearGradient id="D" x1="10" x2="100" y1="10" y2="100" gradientUnits="userSpaceOnUse" spreadMethod="pad">
+      <stop offset="0" stop-color="#ffd500" />
+      <stop offset="1" stop-color="#ff2b00" />
+    </linearGradient>
+  </defs>
   <style>
     @media (prefers-color-scheme:dark) {
       path {
-        fill: #ff8c00
+        fill: url(#D)
       }
     }
   </style>
-  <path
-    d="M50 1A49 49 0 001 50a49 49 0 0049 49 49 49 0 0049-49A49 49 0 0050 1zm.572266 32.113281h6.667968l-8.759765 33.773438h-6.628907l8.720704-33.773438zm-12.34961 5.582031v5.939454l-15.802734 6.470703 15.802734 6.451172v5.898437l-23.240234-9.607422v-5.544922l23.240234-9.607422zm23.554688 0l23.240234 9.607422v5.544922l-23.240234 9.607422v-5.898437l15.802734-6.451172-15.802734-6.470703v-5.939454z"
-    fill="#f58700" />
+  <path fill="url(#L)"
+    d="M50 1A49 49 0 001 50a49 49 0 0049 49 49 49 0 0049-49A49 49 0 0050 1zm.572 32.113h6.668l-8.76 33.774h-6.628l8.72-33.774zm-12.35 5.582v5.94l-15.802 6.47 15.803 6.452v5.898l-23.24-9.607v-5.545l23.24-9.608zm23.555 0l23.24 9.608v5.545l-23.24 9.607v-5.898l15.803-6.452-15.803-6.47v-5.94z" />
 </svg>

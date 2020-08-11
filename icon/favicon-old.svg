@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100"
+  version="1.1" id="svg6">
+  <defs id="defs9">
+    <linearGradient id="blue-light-dark">
+      <stop id="stop13" offset="0" stop-color="#80d5ff" stop-opacity="1" />
+      <stop id="stop15" offset="1" stop-color="#0d80f2" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient spreadMethod="pad" gradientUnits="userSpaceOnUse" y2="98.117" x2="98.117" y1="10.817" x1="10.817"
+      id="linearGradient1" xlink:href="#blue-light-dark" />
+    <linearGradient id="red-light-dark">
+      <stop offset="0" stop-color="#ffd500" />
+      <stop offset="1" stop-color="#ff2b00" />
+    </linearGradient>
+    <linearGradient spreadMethod="pad" gradientUnits="userSpaceOnUse" y2="98.117" x2="98.117" y1="10.817" x1="10.817"
+      id="linearGradient2" xlink:href="#red-light-dark" />
+  </defs>
+  <style id="style2">
+    @media (prefers-color-scheme:dark) {
+      path {
+        fill: url(#linearGradient2)
+      }
+    }
+  </style>
+  <path id="path4" fill="url(#linearGradient1)"
+    d="M50 1A49 49 0 001 50a49 49 0 0049 49 49 49 0 0049-49A49 49 0 0050 1zm.572 32.113h6.668l-8.76 33.774h-6.628l8.72-33.774zm-12.35 5.582v5.94l-15.802 6.47 15.803 6.452v5.898l-23.24-9.607v-5.545l23.24-9.608zm23.555 0l23.24 9.608v5.545l-23.24 9.607v-5.898l15.803-6.452-15.803-6.47v-5.94z"
+    fill-opacity="1" opacity="1" />
+</svg>
