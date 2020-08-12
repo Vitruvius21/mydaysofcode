@@ -1,3 +1,4 @@
+/** ---------- Global ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,11 @@
 @font-face {
   font-family: NasaFont;
   src: url(../fonts/nasalization-rg.ttf);
+}
+
+@font-face {
+  font-family: ProductFontRegular;
+  src: url(../fonts/product_sans_regular.ttf);
 }
 
 html {
@@ -34,13 +40,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: hsl(0, 0%, 70%);
 }
 
-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2.5vw;
-  padding: 1.5rem;
-}
-
+/** ---------- Navigation ---------- */
 nav {
   position: sticky;
   top: 0;
@@ -58,22 +58,6 @@ nav ul {
   height: 5rem;
   margin-top: 1.5rem;
 }
-
-/* @media (max-width: 450px) {
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 14rem;
-    gap: unset;
-  }
-  
-  nav li {
-    flex: 0 95%;
-    text-align: center;
-  }
-} */
 
 nav li {
   background: hsl(0, 0%, 90%);
@@ -100,6 +84,14 @@ nav li a {
 
 nav li a:active {
   color: rgb(90, 185, 234);
+}
+
+/** ---------- Main ---------- */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5vw;
+  padding: 1.5rem;
 }
 
 .card {
@@ -153,6 +145,7 @@ mark {
   /* list-style-position: inside; */
   list-style-type: square;
   margin-left: 1rem;
+  font-family: ProductFontRegular;
 }
 
 .card-image {
@@ -168,6 +161,7 @@ img {
   opacity: 0.8;
 }
 
+/** ---------- Responsive ---------- */
 @media (max-width: 1030px) {
   section {
     grid-template-columns: repeat(2, 1fr);
@@ -222,3 +216,19 @@ img {
     margin-top: 1.2rem;
   }
 }
+
+/* @media (max-width: 450px) {
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 14rem;
+    gap: unset;
+  }
+  
+  nav li {
+    flex: 0 95%;
+    text-align: center;
+  }
+} */
