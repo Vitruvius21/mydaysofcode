@@ -1,0 +1,8 @@
+[![Commit Activity](https://img.shields.io/github/commit-activity/m/vitruvius21/mydaysofcode?style=plastic)](https://github.com/Vitruvius21/mydaysofcode/graphs/commit-activity)
+[![Last Commit](https://img.shields.io/github/last-commit/vitruvius21/mydaysofcode?style=plastic)](https://github.com/Vitruvius21/mydaysofcode/graphs/commit-activity)
+[![Issues](https://img.shields.io/github/issues/vitruvius21/mydaysofcode?style=plastic)](https://github.com/Vitruvius21/mydaysofcode/issues)
+![Code Size](https://img.shields.io/github/repo-size/vitruvius21/mydaysofcode?style=plastic)
+![Repo Size](https://img.shields.io/github/languages/code-size/vitruvius21/mydaysofcode?style=plastic)
+![Top Language](https://img.shields.io/github/languages/top/vitruvius21/mydaysofcode?style=plastic)
+![Languages](https://img.shields.io/github/languages/count/vitruvius21/mydaysofcode?color=blueviolet&style=plastic)
+[![W3c Validation](https://img.shields.io/w3c-validation/html?preset=HTML%2C%20SVG%201.1%2C%20MathML%203.0&style=plastic&targetUrl=https%3A%2F%2Fvitruvius21.github.io%2Fmydaysofcode%2F)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvitruvius21.github.io%2Fmydaysofcode%2F)
