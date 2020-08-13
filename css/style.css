@@ -124,6 +124,11 @@ nav li:hover {
   color: hsla(0, 0%, 0%, 0.8);
 }
 
+.card-title p {
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
 .card,
 mark {
   color: hsla(0, 0%, 0%, 0.7);
