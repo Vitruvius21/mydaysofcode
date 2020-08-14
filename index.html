@@ -61,10 +61,40 @@
           </ul>
           <div class="card-image">
             <picture>
-              <source srcset="./img/day_1.webp" type="image/webp" />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/350/day_1.webp   350w,
+                  ./img/700/day_1.webp   700w,
+                  ./img/1050/day_1.webp 1050w,
+                  ./img/1400/day_1.webp 1400w,
+                  ./img/1444/day_1.webp 1444w
+                "
+                sizes="(max-width: 700px) 100vw, 700px"
+              />
+
+              <source
+                srcset="
+                  ./img/350/day_1.png   350w,
+                  ./img/700/day_1.png   700w,
+                  ./img/1050/day_1.png 1050w,
+                  ./img/1400/day_1.png 1400w,
+                  ./img/1444/day_1.png 1444w
+                "
+                sizes="(max-width: 700px) 100vw, 700px"
+              />
+
               <img
+                sizes="(max-width: 700px) 100vw, 700px"
                 loading="lazy"
-                src="./img/day_1.png"
+                srcset="
+                  ./img/350/day_1.png   350w,
+                  ./img/700/day_1.png   700w,
+                  ./img/1050/day_1.png 1050w,
+                  ./img/1400/day_1.png 1400w,
+                  ./img/1444/day_1.png 1444w
+                "
+                src="./img/700/day_1.png"
                 alt="My website's screenshot on the first day"
                 width="1050"
                 height="506"
