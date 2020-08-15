@@ -125,13 +125,25 @@
           </ul>
           <div class="card-image">
             <picture>
-              <source srcset="./img/day_2.webp" type="image/webp" />
+              <source
+                srcset="
+                  ./img/640/day_2_low.webp  640w,
+                  ./img/1080/day_2.webp    1080w
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./img/640/day_2_low.png  640w,
+                  ./img/1080/day_2.png    1080w
+                "
+              />
               <img
                 loading="lazy"
-                src="./img/day_2.png"
+                src="./img/originals/day_2.png"
                 alt="W3 Schools' screenshot about text effects"
-                width="1050"
-                height="504"
+                width="1080"
+                height="519"
                 title="W3 Schools' screenshot about text effects"
               />
             </picture>
