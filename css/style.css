@@ -182,10 +182,10 @@ img {
   max-width: 5vw;
   height: 5vw;
   border-radius: 50%;
-  animation: 3s linear 1s infinite normal both slidein-circle;
+  animation: 3s linear 1s infinite normal both jumping-circle;
 }
 
-@keyframes slidein-circle {
+@keyframes jumping-circle {
   0% {
     top: calc(50% - 2.5vw);
     left: 0;
