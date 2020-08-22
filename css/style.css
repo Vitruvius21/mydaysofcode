@@ -167,6 +167,7 @@ img {
   opacity: 0.8;
 }
 
+/** - - - - - Day 8 Animation  - - - - - */
 .card-animation {
   position: relative;
   margin-top: 1rem;
@@ -182,7 +183,7 @@ img {
   max-width: 5vw;
   height: 5vw;
   border-radius: 50%;
-  animation: 3s linear 1s infinite normal both jumping-circle;
+  animation: 3s linear 0.5s infinite normal both jumping-circle;
 }
 
 @keyframes jumping-circle {
@@ -207,6 +208,98 @@ img {
     left: 0;
   }
 }
+
+/** - - - - - Day 9 Animation  - - - - - */
+.newton-cradle {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.newton-cradle-top {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #cdcdcd;
+  width: 80%;
+  height: 4%;
+  border-radius: 50px;
+  z-index: 3;
+}
+
+.ball {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #cdcdcd;
+  top: 180px;
+  transform-origin: 50% -400%;
+}
+
+.ball::before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 150px;
+  top: -150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fffeff;
+}
+
+.ball:nth-child(2) {
+  animation: 1s ease-in infinite alternate first-ball;
+}
+
+@keyframes first-ball {
+  0% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+.ball:last-child {
+  animation: 1s ease-out infinite alternate last-ball;
+}
+
+@keyframes last-ball {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-35deg);
+  }
+}
+
+/* @keyframes jumping-circle {
+  0% {
+    top: calc(50% - 2.5vw);
+    left: 0;
+  }
+  25% {
+    top: calc(100% - 5vw);
+    left: calc(50% - 2.5vw);
+  }
+  50% {
+    top: calc(50% - 2.5vw);
+    left: calc(100% - 5vw);
+  }
+  75% {
+    top: 0;
+    left: calc(50% - 2.5vw);
+  }
+  100% {
+    top: calc(50% - 2.5vw);
+    left: 0;
+  }
+} */
 
 /** ---------- Responsive ---------- */
 @media (max-width: 1030px) {
