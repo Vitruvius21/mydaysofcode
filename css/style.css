@@ -240,7 +240,7 @@ img {
   border-radius: 50%;
   background: radial-gradient(circle at 15px 15px, #ffffff, #cdcdcd);
   top: 150px;
-  transform-origin: 50% -400%;
+  transform-origin: 50% -320%;
 }
 
 .ball::before {
@@ -284,6 +284,7 @@ img {
 @media (min-width: 1550px) {
   .ball {
     top: 185px;
+    transform-origin: 50% -400%;
   }
 
   .ball::before {
@@ -297,7 +298,17 @@ img {
   }
 
   .newton-cradle-top {
-    width: 80%;
+    width: 70%;
+  }
+
+  .ball {
+    top: 100px;
+    transform-origin: 50% -220%;
+  }
+
+  .ball::before {
+    height: 190%;
+    top: -75px;
   }
 }
 
@@ -324,6 +335,20 @@ img {
   .card {
     padding: 6%;
   }
+
+  .newton-cradle-top {
+    width: 75%;
+  }
+
+  .ball {
+    top: 95px;
+    transform-origin: 50% -200%;
+  }
+
+  .ball::before {
+    height: 73px;
+    top: -73px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -339,6 +364,16 @@ img {
 
   .newton-cradle-top {
     width: 70%;
+  }
+
+  .ball {
+    top: 160px;
+    transform-origin: 50% -350%;
+  }
+
+  .ball::before {
+    height: 135px;
+    top: -135px;
   }
 }
 
@@ -371,13 +406,13 @@ img {
   }
 
   .ball {
-    top: 80px;
-    transform-origin: 50% -220%;
+    top: 100px;
+    transform-origin: 50% -300%;
   }
 
   .ball::before {
-    height: 55px;
-    top: -135%;
+    height: 75px;
+    top: -185%;
   }
 }
 
