@@ -170,7 +170,7 @@ img {
   opacity: 0.8;
 }
 
-/** - - - - - Day 8 Animation  - - - - - */
+/** Day 8 Animation Start */
 .card-animation {
   position: relative;
   margin-top: 1rem;
@@ -211,8 +211,9 @@ img {
     left: 0;
   }
 }
+/** Day 8 Animation End */
 
-/** - - - - - Day 9 Animation  - - - - - */
+/** Day 9 Animation Start */
 .newton-cradle {
   display: flex;
   position: absolute;
@@ -279,6 +280,7 @@ img {
     transform: rotate(-20deg);
   }
 }
+/** Day 9 Animation End */
 
 /** ---------- Responsive ---------- */
 @media (min-width: 1550px) {
