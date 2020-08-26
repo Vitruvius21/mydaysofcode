@@ -282,6 +282,13 @@ img {
 }
 /** Day 9 Animation End */
 
+/** Day 11 Atom Animation Start */
+.atom-animation {
+  display: flex;
+  justify-content: center;
+}
+/** Day 11 Atom Animation End */
+
 /** ---------- Responsive ---------- */
 @media (min-width: 1550px) {
   .ball {

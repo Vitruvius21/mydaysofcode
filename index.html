@@ -387,7 +387,7 @@
             <li>
               Validated the website with
               <mark
-                ><a href="http://validator.w3.org/"
+                ><a href="http://validator.w3.org/" target="_blank"
                   >W3C Markup Validation Service</a
                 ></mark
               >
@@ -475,7 +475,7 @@
             <p>Time: 5hrs</p>
           </div>
           <ul>
-            <li>Made <q>Day 9 Animation</q> responsive.</li>
+            <li>Made <q>Day 9 Animation</q> responsive;</li>
             <li>
               Read W3Schools <mark>SVG Tutorial</mark> and tested Inkscape +
               Code Editor combination for paths.
@@ -515,40 +515,81 @@
         <div class="card" id="day-11">
           <div class="card-title">
             <h1>Day 11</h1>
-            <p>Time: Xhrs</p>
+            <p>Time: 4hrs</p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-            similique cumque. Saepe, quaerat quasi. Debitis suscipit ratione
-            esse fugiat dolorum obcaecati incidunt deleniti. Minus, veritatis
-            cupiditate doloribus illum recusandae et!
-          </p>
-          <div class="card-image">
-            <picture>
-              <source
-                sizes="(max-width: 750px) 640px, 1080px"
-                srcset="
-                  ./img/640/day_11_low.webp  640w,
-                  ./img/1080/day_11.webp    1080w
-                "
-                type="image/webp"
+          <ul>
+            <li>
+              Read CSS-tricks
+              <mark
+                ><a
+                  href="https://css-tricks.com/guide-svg-animations-smil/"
+                  target="_blank"
+                  >Guide to SVG Animations</a
+                ></mark
+              >;
+            </li>
+            <li>Drawn and animated <mark>my first SVG Animation</mark>.</li>
+          </ul>
+          <div class="atom-animation">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 300 300"
+              height="auto"
+              width="50%"
+            >
+              <path
+                id="motionPath1"
+                fill="none"
+                stroke="#5ab9ea"
+                stroke-width="3"
+                d="M191.522 149.992a41.41 131.242 0 01-41.41 131.242 41.41 131.242 0 01-41.41-131.242 41.41 131.242 0 0141.41-131.242 41.41 131.242 0 0141.41 131.242"
               />
-              <source
-                sizes="(max-width: 750px) 640px, 1080px"
-                srcset="
-                  ./img/640/day_11_low.png  640w,
-                  ./img/1080/day_11.png    1080w
-                "
+              <path
+                id="motionPath2"
+                fill="none"
+                stroke="#5ab9ea"
+                stroke-width="3"
+                d="M167.726 184.297a38.563 142.958 62.822 01-144.788 30.992 38.563 142.958 62.822 01109.56-99.603 38.563 142.958 62.822 01144.788-30.991 38.563 142.958 62.822 01-109.56 99.602"
               />
-              <img
-                loading="lazy"
-                src="./img/1080/day_11.png"
-                alt="Image placeholder for day 11"
-                width="1050"
-                height="591"
-                title="Image placeholder for day 11"
+              <path
+                id="motionPath3"
+                fill="none"
+                stroke="#5ab9ea"
+                stroke-width="3"
+                d="M132.498 184.297a38.563 142.958-62.822 00144.788 30.992 38.563 142.958-62.822 00-109.56-99.602A38.563 142.958-62.822 0022.938 84.695a38.563 142.958-62.822 00109.56 99.602"
               />
-            </picture>
+              <circle id="circle1" cx="0" cy="0" r="11.045" fill="tomato" />
+              <circle id="circle2" cx="0" cy="0" r="11.045" fill="tomato" />
+              <circle id="circle3" cy="0" cx="0" r="11.045" fill="tomato" />
+              <circle r="14.042" cy="150.104" cx="149.891" fill="tomato" />
+              <animateMotion
+                xlink:href="#circle1"
+                dur="2s"
+                begin="0s"
+                fill="freeze"
+                repeatCount="indefinite"
+              >
+                <mpath xlink:href="#motionPath1" />
+              </animateMotion>
+              <animateMotion
+                xlink:href="#circle2"
+                dur="1.9s"
+                begin="0s"
+                fill="freeze"
+                repeatCount="indefinite"
+              >
+                <mpath xlink:href="#motionPath2" />
+              </animateMotion>
+              <animateMotion
+                xlink:href="#circle3"
+                dur="1.8s"
+                begin="0s"
+                fill="freeze"
+                repeatCount="indefinite"
+              >
+                <mpath xlink:href="#motionPath3" />
+              </animateMotion>
+            </svg>
           </div>
         </div>
         <!--* Day 11 End -->
