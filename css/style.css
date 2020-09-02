@@ -163,7 +163,7 @@ mark {
   align-self: center;
 }
 
-img {
+.card-image img {
   max-width: 100%;
   height: auto;
   transform: scale(1.04);
@@ -286,6 +286,21 @@ img {
 .atom-animation {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.codepen-logo {
+  background: white;
+  border-radius: 4px;
+  padding: 3px;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 0;
+}
+
+.codepen-logo:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 /** Day 11 Atom Animation End */
 
