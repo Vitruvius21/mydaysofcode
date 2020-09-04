@@ -1,4 +1,10 @@
 /** ---------- Global ---------- */
+:root {
+  --main-bg-color: hsl(0, 0%, 90%);
+  --dark-shdw-color: hsl(0, 0%, 74%);
+  --light-shdw-color: hsl(0, 0%, 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +28,7 @@ html {
 
 body {
   font-family: system-ui, sans-serif;
-  background: hsl(0, 0%, 90%);
+  background: var(--main-bg-color);
 }
 
 body::-webkit-scrollbar {
@@ -31,7 +37,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: hsl(0, 0%, 80%);
+  background-color: #cccccc;
   outline: 1px solid slategrey;
   border-radius: 2rem;
 }
@@ -61,21 +67,23 @@ nav ul {
   align-items: center;
   list-style-type: none;
   gap: 4vw;
-  background: hsl(0, 0%, 90%);
+  background: var(--main-bg-color);
   width: 100%;
   height: 5rem;
   margin-top: 2rem;
 }
 
 nav li {
-  background: hsl(0, 0%, 90%);
+  background: var(--main-bg-color);
   border-radius: 40px;
   border: 1px solid hsla(0, 0%, 85%, 0.15);
-  box-shadow: 4px 4px 10px 0 #bdbdbd, -6px -6px 14px 0 #ffffff;
+  box-shadow: 4px 4px 10px 0 var(--dark-shdw-color),
+    -6px -6px 14px 0 var(--light-shdw-color);
 }
 
 nav li:active {
-  box-shadow: inset 4px 4px 10px 0 #bdbdbd, inset -6px -6px 14px 0 #ffffff;
+  box-shadow: inset 4px 4px 10px 0 var(--dark-shdw-color),
+    inset -6px -6px 14px 0 var(--light-shdw-color);
 }
 
 nav li a {
@@ -106,11 +114,12 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: hsl(0, 0%, 90%);
+  background: var(--main-bg-color);
   padding: 1.8rem;
   border-radius: 40px;
   border: 1px solid hsla(0, 0%, 85%, 0.15);
-  box-shadow: 6px 6px 14px 0 #bdbdbd, -8px -8px 18px 0 #ffffff;
+  box-shadow: 6px 6px 14px 0 var(--dark-shdw-color),
+    -8px -8px 18px 0 var(--light-shdw-color);
   transition: transform 0.5s ease-out;
 }
 
@@ -239,7 +248,11 @@ mark {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: radial-gradient(circle at 15px 15px, #ffffff, #cdcdcd);
+  background: radial-gradient(
+    circle at 15px 15px,
+    var(--light-shdw-color),
+    #cccccc
+  );
   top: 150px;
   transform-origin: 50% -320%;
 }
@@ -252,7 +265,7 @@ mark {
   top: -125px;
   left: 50%;
   transform: translate(-50%, 0);
-  background: linear-gradient(90deg, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 90%) 90%);
+  background: linear-gradient(90deg, var(--light-shdw-color) 10%, #e6e6e6 90%);
 }
 
 .ball:nth-child(2) {
