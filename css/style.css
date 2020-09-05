@@ -177,6 +177,11 @@ mark {
   height: auto;
   transform: scale(1.04);
   opacity: 0.8;
+  transition-duration: 0.4s;
+}
+
+.card-image img:hover {
+  transform: scale(1.06);
 }
 
 /** Day 8 Animation Start */
