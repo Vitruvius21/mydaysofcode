@@ -350,6 +350,7 @@ mark {
   position: absolute;
   left: 0;
 }
+
 .codepen-logo path {
   fill: var(--txt-color);
 }
