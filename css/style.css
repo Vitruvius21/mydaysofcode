@@ -1,4 +1,4 @@
-/** ---------- Global ---------- */
+/** ========== Global ========== */
 :root {
   --main-bg-color: hsl(0, 0%, 90%);
   --dark-shdw-color: hsl(0, 0%, 74%);
@@ -56,7 +56,34 @@ q {
   quotes: '«' '»' '‹' '›';
 }
 
-/** ---------- Navigation ---------- */
+button {
+  margin-left: 100px;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 20px;
+  border-radius: 30px;
+  border: 1px solid #8f9092;
+  box-shadow: 0 3px 3px 1px #fcfcfc, 0 4px 8px #d6d7d9, 0 -3px 4px #cecfd1,
+    0 -4px 4px #fefefe, inset 0 0 3px 0 #cecfd1;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
+
+button:hover {
+  box-shadow: 0 3px 3px 1px #fcfcfc, 0 4px 8px #d6d7d9, 0 -3px 4px #cecfd1,
+    0 -4px 4px #fefefe, inset 0 0 2px 2px #cecfd1;
+}
+
+button:active {
+  background: none;
+  box-shadow: 0 3px 3px 1px #fcfcfc, 0 4px 8px #d6d7d9, 0 -3px 4px #cecfd1,
+    0 -4px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 1px #aaa;
+}
+
+/** ========== Navigation ========== */
 nav {
   position: sticky;
   top: 0;
@@ -104,7 +131,7 @@ nav li a:active {
   color: rgb(90, 185, 234);
 }
 
-/** ---------- Main ---------- */
+/** ========== Main ========== */
 section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,7 +170,7 @@ nav li:hover {
   color: hsla(0, 0%, 0%, 0.8);
 }
 
-.card-title p {
+.card-title h2 {
   font-size: 1.17rem;
   font-weight: bold;
 }
@@ -166,7 +193,7 @@ mark {
   transition: 0.3s ease all;
 }
 
-.card a:active {
+.card a:active:not(.a-button) {
   background-color: var(--mark-color);
   border-radius: 2px;
   transition: 0.3s ease all;
@@ -359,7 +386,7 @@ mark {
 }
 /** Day 11 Atom Animation End */
 
-/** ---------- Responsive ---------- */
+/** ========== Responsive ========== */
 @media (min-width: 1550px) {
   .ball {
     top: 185px;
